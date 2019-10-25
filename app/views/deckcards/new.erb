@@ -1,0 +1,27 @@
+<h1>Create a deck</h1>
+
+<%= form_for @deckcard do |f| %>
+<%= f.label :deck_name %>
+<%= f.collection_select :deck_id, @decks, :id, :name %> <br>
+<%= f.collection_select :card_id1, @cards, :id, :name %><br>
+<%= f.collection_select :card_id2, @cards, :id, :name %><br>
+<%= f.collection_select :card_id3, @cards, :id, :name %><br>
+<%= f.collection_select :card_id4, @cards, :id, :name %><br>
+<%= f.collection_select :card_id5, @cards, :id, :name %><br>
+<%= f.collection_select :card_id6, @cards, :id, :name %><br>
+<%= f.collection_select :card_id7, @cards, :id, :name %><br>
+<%= f.collection_select :card_id8, @cards, :id, :name %><br>
+<%= f.collection_select :card_id9, @cards, :id, :name %><br>
+<%= f.collection_select :card_id10, @cards, :id, :name %><br>
+<%= f.collection_select :card_id11, @cards, :id, :name %><br>
+<%= f.collection_select :card_id12, @cards, :id, :name %><br>
+<%= f.collection_select :card_id13, @cards, :id, :name %><br>
+<%= f.collection_select :card_id14, @cards, :id, :name %><br>
+<%= f.collection_select :card_id15, @cards, :id, :name %><br>
+<%= f.collection_select :card_id16, @cards, :id, :name %><br>
+<%= f.collection_select :card_id17, @cards, :id, :name %><br>
+<%= f.collection_select :card_id18, @cards, :id, :name %><br>
+<%= f.collection_select :card_id19, @cards, :id, :name %><br>
+<%= f.collection_select :card_id20, @cards, :id, :name %><br>
+<%= f.submit "Create deck"%>
+<% end %>

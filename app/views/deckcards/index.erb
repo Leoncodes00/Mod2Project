@@ -1,0 +1,11 @@
+<h1>Decks</h1>
+
+<h3>
+
+  <% @deckcards.each do |deckcard| %>
+  <% find_deck = deckcard.deck_id %>
+  <% name_deck = Deck.find_by(id: find_deck) %>
+  <%= link_to name_deck.name, "/deckcards/#{name_deck.id}" %> <br>
+  <% end %>
+
+</h3>

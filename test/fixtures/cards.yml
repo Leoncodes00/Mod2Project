@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  klass: MyString
+  attack: 1
+  health: 1
+  cost: 1
+  noble_phantasm: MyString
+
+two:
+  name: MyString
+  klass: MyString
+  attack: 1
+  health: 1
+  cost: 1
+  noble_phantasm: MyString

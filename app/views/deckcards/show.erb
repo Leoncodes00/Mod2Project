@@ -1,0 +1,50 @@
+
+<% @showdeck = Deck.find_by(id: @deckcard.deck_id) %>
+<% @showcard1 = Card.find_by(id: @deckcard.card_id1) %>
+<% @showcard2 = Card.find_by(id: @deckcard.card_id2) %>
+<% @showcard3 = Card.find_by(id: @deckcard.card_id3) %>
+<% @showcard4 = Card.find_by(id: @deckcard.card_id4) %>
+<% @showcard5 = Card.find_by(id: @deckcard.card_id5) %>
+<% @showcard6 = Card.find_by(id: @deckcard.card_id6) %>
+<% @showcard7 = Card.find_by(id: @deckcard.card_id7) %>
+<% @showcard8 = Card.find_by(id: @deckcard.card_id8) %>
+<% @showcard9 = Card.find_by(id: @deckcard.card_id9) %>
+<% @showcard10 = Card.find_by(id: @deckcard.card_id10) %>
+<% @showcard11 = Card.find_by(id: @deckcard.card_id11) %>
+<% @showcard12 = Card.find_by(id: @deckcard.card_id12) %>
+<% @showcard13 = Card.find_by(id: @deckcard.card_id13) %>
+<% @showcard14 = Card.find_by(id: @deckcard.card_id14) %>
+<% @showcard15 = Card.find_by(id: @deckcard.card_id15) %>
+<% @showcard16 = Card.find_by(id: @deckcard.card_id16) %>
+<% @showcard17 = Card.find_by(id: @deckcard.card_id17) %>
+<% @showcard18 = Card.find_by(id: @deckcard.card_id18) %>
+<% @showcard19 = Card.find_by(id: @deckcard.card_id19) %>
+<% @showcard20 = Card.find_by(id: @deckcard.card_id20) %>
+<h2>
+  Deck Name: <%= @showdeck[:name] %>
+</h2>
+<h3>
+  1: <%= link_to @showcard1[:name], "/cards/#{@showcard1[:id]}" %> <br>
+  2: <%= link_to @showcard2[:name], "/cards/#{@showcard2[:id]}" %> <br>
+  3: <%= link_to @showcard3[:name], "/cards/#{@showcard3[:id]}" %> <br>
+  4: <%= link_to @showcard4[:name], "/cards/#{@showcard4[:id]}" %><br>
+  5: <%= link_to @showcard5[:name], "/cards/#{@showcard5[:id]}" %><br>
+  6: <%= link_to @showcard6[:name], "/cards/#{@showcard6[:id]}" %><br>
+  7: <%= link_to @showcard7[:name], "/cards/#{@showcard7[:id]}" %><br>
+  8: <%= link_to @showcard8[:name], "/cards/#{@showcard8[:id]}" %><br>
+  9: <%= link_to @showcard9[:name], "/cards/#{@showcard9[:id]}" %><br>
+  10: <%= link_to @showcard10[:name], "/cards/#{@showcard10[:id]}" %><br>
+  11: <%= link_to @showcard11[:name], "/cards/#{@showcard11[:id]}" %><br>
+  12: <%= link_to @showcard12[:name], "/cards/#{@showcard12[:id]}" %><br>
+  13: <%= link_to @showcard13[:name], "/cards/#{@showcard13[:id]}" %><br>
+  14: <%= link_to @showcard14[:name], "/cards/#{@showcard14[:id]}" %><br>
+  15: <%= link_to @showcard15[:name], "/cards/#{@showcard15[:id]}" %><br>
+  16: <%= link_to @showcard16[:name], "/cards/#{@showcard16[:id]}" %><br>
+  17: <%= link_to @showcard17[:name], "/cards/#{@showcard17[:id]}" %><br>
+  18: <%= link_to @showcard18[:name], "/cards/#{@showcard18[:id]}" %><br>
+  19: <%= link_to @showcard19[:name], "/cards/#{@showcard19[:id]}" %><br>
+  20: <%= link_to @showcard20[:name], "/cards/#{@showcard20[:id]}" %><br>
+</h3>
+
+<%= link_to "Edit deck", "/deckcards/#{@deckcard.id}/edit" %> <br>
+<%= link_to "Delete deck", deckcard_path(@deckcard.id), method: :delete %>

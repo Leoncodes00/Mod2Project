@@ -1,0 +1,6 @@
+<h1>Deck Name</h1>
+<h3>Name: <%= @deck.name %></h3>
+
+<%= link_to "Create deck", new_deckcard_path %> <br>
+<%= link_to "Edit deck name", "/decks/#{@deck.id}/edit" %> <br>
+<%= link_to "Delete deck name", deck_path(@deck.id), method: :delete %> <br>

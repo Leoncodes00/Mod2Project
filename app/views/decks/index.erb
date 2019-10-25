@@ -1,0 +1,10 @@
+<h1>Decks</h1>
+
+<h3>
+  <% @decks.each do |deck| %>
+  <%= link_to deck.name, deck_path(deck.id) %> <br>
+  <% end %>
+</h3>
+
+
+<%= button_to "Make a deck", new_deck_path, method: :get %>

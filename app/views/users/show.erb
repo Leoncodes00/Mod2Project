@@ -1,0 +1,15 @@
+<h1>User page</h1>
+
+<h3>
+  Username: <%= @user.username %> <br>
+  Email: <%= @user.email %> <br>
+</h3>
+
+<h3>
+  Options:
+  <li> <%= link_to "Edit user information", "/users/#{@user.id}/edit" %> <br> </li>
+    <li> <%= link_to "Go to decks", decks_path %> <br></li>
+    <li> <%= link_to "View servant cards", cards_path %> </li>
+<%= button_to "Delete my account", user_path(@user.id), method: :delete %> <br>
+<%= link_to "Log out", logout_path %>
+</h3>
